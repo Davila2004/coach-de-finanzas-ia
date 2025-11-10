@@ -1,0 +1,16 @@
+{
+  "name": "Coach de Finanzas IA",
+  "short_name": "Finanzas IA",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1e3a8a",
+  "description": "Un coach de finanzas basado en el comportamiento y la lógica de IA.",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

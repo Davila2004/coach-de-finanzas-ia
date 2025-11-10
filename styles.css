@@ -1,0 +1,164 @@
+:root {
+    /* Variables de Color */
+    --color-primary: #1e3a8a; /* Azul oscuro elegante */
+    --color-secondary: #34d399; /* Verde menta para acciones (éxito) */
+    --color-background: #f8fafc; /* Fondo muy claro */
+    --color-card: #ffffff;
+    --color-text: #334155;
+    --color-border: #e2e8f0;
+    --color-warning: #fcd34d; /* Amarillo para consejos */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px 15px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: var(--color-card);
+    padding: 24px;
+    margin-bottom: 25px;
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra más profunda */
+}
+
+h2 {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/* Estilos de Formulario */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #475569;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: var(--color-secondary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.3);
+}
+
+/* Estilos de Botones */
+button {
+    background-color: var(--color-secondary);
+    color: var(--color-primary); /* Color de texto que contrasta */
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #10b981; /* Verde más oscuro en hover */
+    box-shadow: 0 6px 15px rgba(52, 211, 153, 0.4);
+}
+
+button:disabled {
+    background-color: #c4d0da; /* Gris más claro y suave */
+    color: #94a3b8;
+    cursor: not-allowed;
+}
+
+#analizar-btn {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+#analizar-btn:hover:not(:disabled) {
+    background-color: #3154b3;
+}
+
+
+/* Estilo para la lista de gastos */
+#gastos-lista {
+    margin-top: 20px;
+    border-top: 1px solid var(--color-border);
+    padding-top: 15px;
+}
+
+.gasto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 0.95em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.gasto-monto {
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 1.1em;
+}
+
+.gasto-detalle {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.gasto-nota {
+    display: block;
+    color: #64748b;
+    font-size: 0.8em;
+    margin-top: 2px;
+}
+
+
+/* Estilo para el consejo de la IA */
+#consejo-ia {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: var(--color-warning); 
+    color: #854d0e;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
